@@ -2,7 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Examples\SOLID\Good;
+namespace App\Examples\SOLID\Good\Repository;
+
+use App\Examples\SOLID\Good\Clients\Client1C;
 
 final class Api1CRepository extends AbstractRepository
 {

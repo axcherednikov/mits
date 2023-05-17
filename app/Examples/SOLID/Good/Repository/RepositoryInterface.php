@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Examples\SOLID\Good;
+namespace App\Examples\SOLID\Good\Repository;
 
 interface RepositoryInterface
 {

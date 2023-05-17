@@ -2,17 +2,18 @@
 
 declare(strict_types=1);
 
-namespace App\Examples\SOLID\Good;
+namespace App\Examples\SOLID\Good\Services;
 
+use App\Examples\SOLID\Good\Repository\RepositoryFactory;
 use Exception;
 
 final class OrderService
 {
-    private readonly Factory $factory;
+    private readonly RepositoryFactory $factory;
 
     public function __construct()
     {
-        $this->factory = new Factory();
+        $this->factory = new RepositoryFactory();
     }
 
     public function create(array $data): bool

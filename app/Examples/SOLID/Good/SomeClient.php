@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Examples\SOLID\Good;
 
+use App\Examples\SOLID\Good\Services\OrderService;
 use Illuminate\Http\Response;
 use Symfony\Component\HttpKernel\Attribute\AsController;
 

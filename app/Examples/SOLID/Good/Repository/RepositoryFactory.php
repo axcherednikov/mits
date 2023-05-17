@@ -2,11 +2,12 @@
 
 declare(strict_types=1);
 
-namespace App\Examples\SOLID\Good;
+namespace App\Examples\SOLID\Good\Repository;
 
+use App\Examples\SOLID\Good\Clients\Client1C;
 use Exception;
 
-final class Factory
+final class RepositoryFactory
 {
     private Driver $driver;
 

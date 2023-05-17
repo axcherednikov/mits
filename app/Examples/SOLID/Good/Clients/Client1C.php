@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Examples\SOLID\Good;
+namespace App\Examples\SOLID\Good\Clients;
 
 final class Client1C
 {
