@@ -22,14 +22,11 @@ final class RepositoryFactory
      */
     public function make(): AbstractRepository
     {
-        if ($this->driver->get() === DriverEnum::PGSQL) {
-            return new PostgresRepository();
-        }
-
-        if ($this->driver->get() === DriverEnum::API1C) {
-            return new Api1CRepository(new Client1C());
-        }
-
-        return new MysqlRepository();
+        return match ($this->driver->get()) {
+            DriverEnum::API1C => new Api1CRepository(new Client1C()),
+            DriverEnum::MYSQL => new MysqlRepository(),
+            DriverEnum::PGSQL => new PostgresRepository(),
+            default => throw new Exception('Unknown driver'),
+        };
     }
 }
