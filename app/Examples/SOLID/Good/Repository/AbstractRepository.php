@@ -16,12 +16,4 @@ abstract class AbstractRepository implements RepositoryInterface
 
         return $this;
     }
-
-    abstract public function create(array $data): bool;
-
-    abstract public function update(array $data): bool;
-
-    abstract public function delete(): bool;
-
-    abstract public function find(): array;
 }
