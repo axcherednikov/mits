@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace App\Examples\SOLID\Good\Services;
 
-use App\Examples\SOLID\Bad\Notifications\SmsNotification;
 use App\Examples\SOLID\Good\Notifications\Notification;
 use App\Examples\SOLID\Good\Notifications\Transports\SMSTransport;
 use App\Examples\SOLID\Good\Notifications\Transports\TelegramTransport;
