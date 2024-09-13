@@ -12,16 +12,14 @@ final class Client
         $db2 = DB::getInstance();
 
         if ($db1 === $db2) {
-            dump($db1);
-            dump($db2);
-
-            echo ' ' . PHP_EOL;
+            var_dump($db1);
+            var_dump($db2);
         } else {
             echo 'Это не одиночка' . PHP_EOL;
         }
     }
 
-    public function checkSRP(): void
+    public function test(): void
     {
         $db1 = DB::getInstance();
         $db1->setHost('example.com');
